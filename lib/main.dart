@@ -153,16 +153,161 @@ class MainPage extends StatelessWidget {
               ),
             ),
             Center(
-                child:
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Text('Hello World!'),
-                    )
-                  ],
-                ),
+              child: Column(
+                children: <Widget>[
+                  Divider(color: Colors.white),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0012003425/2019-05  09/08/19  SEPLAN",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0218006665/2019-03  07/08/19  SET        ",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0033008875/2019-62  06/08/19  SEAD     ",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0012003425/2019-21  06/08/19  SEPLAN",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0010004288/2019-03  05/08/19  SESAP   ",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0044001156/2019-94  05/08/19  SESED   ",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("9712002235/2019-22  04/08/19  SEAP     ",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0012003425/2019-05  03/08/19  SEPLAN",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("1077006625/2019-03  02/08/19  CAERN   ",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailPage()),
+                      );
+                    },
+                    color: const Color(0xFFFFFFFF),
+                    label: Text("0012003425/2019-05  30/07/19  SEPLAN",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    icon: Icon(Icons.save_alt),
+                  ),
+                ],
+              ),
             ),
             Center(
               child: Column(
@@ -229,6 +374,87 @@ class MainPage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class DetailPage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Detalhe do processo"),
+        ),
+        body: Padding(
+            padding: EdgeInsets.all(40),
+            child: Center(
+                child: Column(
+                  children: <Widget>[
+                    Divider(color: Colors.white),
+                    Text(
+                        '0012003425/2019-05  09/08/19',
+                        style: TextStyle(color: Colors.black, fontSize: 21)
+                    ),
+                    Divider(color: Colors.blue),
+                    Text(
+                        'SEPLAN',
+                        style: TextStyle(color: Colors.black, fontSize: 21)
+                    ),
+                    Divider(color: Colors.blue),
+                    Divider(color: Colors.white),
+                    Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu sem nisl. Cras vitae ex euismod, euismod nibh eget, maximus libero. Morbi interdum quis metus eget iaculis.',
+                        style: TextStyle(color: Colors.blue, fontSize: 21)
+                    ),
+                    Text(
+                        'Integer sollicitudin accumsan dui, nec varius libero mollis et. Morbi porttitor, sapien sed consectetur congue, turpis ipsum gravida nunc, ut ornare nibh velit in risus. ',
+                        style: TextStyle(color: Colors.blue, fontSize: 21)
+                    ),
+                    Divider(color: Colors.white),
+                    Divider(color: Colors.blue),
+                    Text(
+                        'RS 143.328,53',
+                        style: TextStyle(color: Colors.black, fontSize: 21)
+                    ),
+                    Divider(color: Colors.white),
+                    IconButton(
+                      icon: Icon(Icons.share),
+                      tooltip: 'Compartilhar este conteúdo',
+                      onPressed: ()  {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SharePage()),
+                        );
+                      },
+                    ),
+                  ],
+                )
+            )
+        )
+    );
+  }
+}
+
+class SharePage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Compartilhar com..."),
+        ),
+        body: Padding(
+            padding: EdgeInsets.all(0),
+            child: Center(
+                child: Column(
+                  children: <Widget>[
+                    Image.asset(
+                      'imagens/share.png',
+                      height: 300.0,
+                    ),
+                  ],
+                )
+            )
+        )
     );
   }
 }
